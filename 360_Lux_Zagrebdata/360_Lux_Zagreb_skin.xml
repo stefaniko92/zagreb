@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19">
+
+    
+  <!-- Spot Style - Default Point Spot Style -->
+  <style name="IconDefaultPointSpotStyle"
+         url="%FIRSTXML%/spots/hotspot_plan_sequence_user_defaultpoint0.png"
+         visible="false"
+         frame="0"
+         lastframe="9"
+         framewidth="67"
+         frameheight="67"
+         stopspotsequence="false"
+         crop="0|0|67|67"
+         alpha="0.8"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconDefaultPointSpotStyle"
+         onover="onoverIconDefaultPointSpotStyle"
+         onout="onoutIconDefaultPointSpotStyle"
+
+         height="25"
+         width="25"
+         />
+
+  <action name="onhoverIconDefaultPointSpotStyle">
+    showtooltip('hotspot');
+  </action>
+
+  <action name="onoverIconDefaultPointSpotStyle">
+
+tween(alpha, 1);
+
+  </action>
+
+  <action name="onoutIconDefaultPointSpotStyle">
+    hideTooltip();
+
+    tween(alpha, 0.8);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - naslovni spot -->
+  <style name="Iconnaslovnispot"
+         url="%FIRSTXML%/spots/logo__user_defaultpoint1.png"
+         visible="false"
+         onhover="onhoverIconnaslovnispot"
+         onover="onoverIconnaslovnispot"
+         onout="onoutIconnaslovnispot"
+
+
+         />
+
+  <action name="onhoverIconnaslovnispot">
+    showtooltip('hotspot');
+  </action>
+
+  <action name="onoverIconnaslovnispot">
+tween(scale, 1.2);
+
+
+  </action>
+
+  <action name="onoutIconnaslovnispot">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - spot 01 -->
+  <style name="Iconspot01"
+         url="%FIRSTXML%/spots/hotspot_plan_sequence_user_defaultpoint2.png"
+         visible="false"
+         frame="0"
+         lastframe="9"
+         framewidth="67"
+         frameheight="67"
+         stopspotsequence="false"
+         crop="0|0|67|67"
+         alpha="0.8"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconspot01"
+         onover="onoverIconspot01"
+         onout="onoutIconspot01"
+
+         height="25"
+         width="25"
+         />
+
+  <action name="onhoverIconspot01">
+    showtooltip('hotspot');
+  </action>
+
+  <action name="onoverIconspot01">
+
+tween(alpha, 1);
+
+  </action>
+
+  <action name="onoutIconspot01">
+    hideTooltip();
+
+    tween(alpha, 0.8);
+
+  </action>
+
+
+
+</krpano>
